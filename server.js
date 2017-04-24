@@ -5,6 +5,9 @@ app.get('/',function(req,res){
     res.end("hello world");
 })
 
-app.listen('8080',function(){
-    console.log("app is listening to 8080");
+app.listen('process.env.PORT || 80',function(){
+    console.log("app is listening to 80");
 })
+
+
+
